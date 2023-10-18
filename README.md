@@ -6,6 +6,8 @@
 # clonar proyecto
 git clone <url>
 
+```
+```bash
 # intalar dependencias
 npm install
 
