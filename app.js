@@ -16,6 +16,7 @@ const PORT = process.env.PORT || 3000;
  */
 app.use("/", require("./src/routes"));  
 
+module.exports = app;
 
 function main() {
     try {
@@ -25,4 +26,7 @@ function main() {
         console.error('', error);
     }
 }
-main();
+
+if (require.main === module) {
+    main();
+}
